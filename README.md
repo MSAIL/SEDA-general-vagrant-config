@@ -1,4 +1,4 @@
-project-A-vagrant-config
+MSAIL-general-vagrant-config
 ========================
 
-General vagrant configuration for Project A components
+General vagrant configuration for MSAIL components.

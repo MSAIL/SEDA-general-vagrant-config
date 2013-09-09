@@ -11,7 +11,10 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
 
   # Every Vagrant virtual environment requires a box to build off of.
   config.vm.box = "precise64"
-  
+
+  # Generic tools install
+  config.vm.provision :shell, :path => "bootstrap.sh"
+
   # Install Octave (Matlab clone)
   config.vm.provision :shell, :path => "installOctave.sh"
 

@@ -1,11 +1,11 @@
-MSAIL-general-vagrant-config
+SEDA-general-vagrant-config
 ========================
 
-General vagrant configuration for MSAIL components.
+General vagrant configuration for SEDA components.
 
 In order to get started install the latest version of Vagrant from http://downloads.vagrantup.com/.
 
-Run "git clone git@github.com:pcannons/MSAIL-general-vagrant-config.git".
+Run "git clone git@github.com:pcannons/SEDA-general-vagrant-config.git".
 
 From within this repository run "vagrant up" and after the steps have completed "vagrant ssh".
 

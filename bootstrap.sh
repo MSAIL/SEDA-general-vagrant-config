@@ -1,7 +1,6 @@
 #!/usr/bin/env bash
-
 ##
-## This script must be ran and msut be ran first when bring up a vagrant box.
+## This script must always be ran first when bringing up a vagrant box.
 ##
 ## Please keep in alphabetical order.
 ##
@@ -14,3 +13,14 @@ apt-get install -y git
 
 # Vim
 apt-get install -y vim
+
+# Create source directory
+mkdir -p "/vagrant/source"
+
+# Own as user
+chown -R vagrant:vagrant "/vagrant/source/"
+
+# Link source directory into home 
+if [[ ! -L "/home/vagrant/source" ]]; then
+  ln -s "/vagrant/source" "/home/vagrant/source"
+fi
